@@ -1,0 +1,56 @@
+1.create-create-app [name]
+2.cd [name]
+3.yarn eject/ npm run eject
+4.yarn add lib-flexible [for responsive]
+5.yarn add postcss-loader postcss-px2rem --dev
+6.configure: in config/webpack.config.js: add   px2rem({remUnit:37.5})(line18) and const px2rem=require("postcss-px2rem");
+
+    ident: 'postcss',
+              plugins: () => [
+                require('postcss-flexbugs-fixes'),
+                require('postcss-preset-env')({
+                  autoprefixer: {
+                    flexbox: 'no-2009',
+                  },
+                  stage: 3,
+                }),
+                  px2rem({remUnit:37.5}),  //in here
+
+
+7.for ui library
+    yarn add babel-plugin-import --dev
+
+8.configure ui library
+    in package.json file:
+    in "babel"
+
+      "babel": {
+        "presets": [
+          "react-app"
+        ],
+        "plugins": [
+          ["import",{
+            "libraryName": "antd-mobile",
+            "style": "css"
+          }]
+        ]
+      },
+
+9.yarn add antd-mobile
+
+10.yarn add node-sass --dev
+
+11.yarn add react-router-dom
+
+12.yarn add react-sticky
+
+13.yarn add react-keep-alive
+
+
+14. in index.html add
+        <meta name="referrer" content="no-referrer"/>
+
+
+15. yarn add js-cookie
+
+16. yarn add video-react

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "js-cookie": "^2.2.1",
+    "react-keep-alive": "^2.5.2",
+    "react-sticky": "^6.0.3",
+    "video-react": "^0.14.1"
+  }
+}
