@@ -1,0 +1,15 @@
+.book-page{
+  .book-nav-bar{
+    height: 50px;
+    background: linear-gradient(to right,green, yellowgreen);
+    display: flex;
+    align-items: center;
+  }
+
+  .book-nav{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

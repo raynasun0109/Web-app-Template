@@ -1,0 +1,24 @@
+.userpage{
+
+  /deep/ .am-nav-dark{
+    background: orangered;
+  }
+
+  .username{
+    width: 350px;
+    height: 40px;
+    background: white;
+    margin: auto;
+    border-radius: 5px;
+  }
+
+  .submit{
+    input{
+      height: 100%;
+      background: orangered;
+      color: white;
+    }
+  }
+
+
+}
